@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mea+Culpa&display=swap');
+body{
+    background-color:white;
+   
+}
+html{
+    scroll-behavior: smooth;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #ffffff; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #861f41; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background:  #e8d3ee; 
+  }
+.navbar{
+    backdrop-filter: blur(5px);
+  background-color:#861f41;
+  
+
+  color: white;
+}
+.my-nav{
+    margin-left:40%;
+    color: white;
+}
+.my-nav>ul>li{
+    padding-left: 60px;
+    /* color: rgb(255, 255, 255); */
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+.navbar-brand{
+    color: white !important;
+}
+.nav-link{
+    color: white !important;
+}
+.nav-logo{
+    background-color: transparent;
+    width:5%;
+    height:55px;
+    border-radius:5%;
+    color: white;
+}
+.icon{
+    font-size: 45px;
+    margin-left: 12px;
+    margin-top: 6px;
+}
+.sub-brand{
+    margin-left: 50px;
+    margin-top: 50px;
+    z-index: -99999;
+}
+.main{
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 25px;
+}
+.mobile{
+    display: none;
+}
+.dropdown-menu{
+    z-index: 999999999;
+}
+
+/* .form{
+    margin-top: 10%;
+    margin-left: 40%;
+    margin-right: 40%;
+} */
+/*  */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  max-width: 620px;
+  margin: 100px auto 100px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.container1{
+    backdrop-filter: blur(30px);
+    background-color: transparent;
+    border-radius:5px; 
+    padding: 20px 20px 20px 20px;
+     margin-top:50px; 
+     width:85%;
+     /* border: 1px solid red; */
+     margin-left: 3%;
+     margin-top: -8px;
+     border-bottom: 1px solid rgb(208, 208, 208) ;
+}
+.ins{
+    margin-top: 15px !important;
+
+}
+.formin{
+border: none;
+outline: none;
+background-color: transparent;
+border-bottom: 1px solid grey;
+}
+.form {
+  border-radius: 15px;
+  background-color: #fff;
+  min-width: 100%;
+  padding-top: 165px;
+  position: relative;
+  box-shadow: -5px 7px 22px 0px rgba(0, 0, 0, 0.35);
+}
+
+form {
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+
+
+
+/*  */
+@media screen and (max-width:1100px) {
+    .parent{
+        display: none;
+    }
+    .mobile{
+        display: block;
+    }
+}
+.super{
+  display: block;
+  opacity: 0.8;
+  filter: blur(20px);
+  transition: ease-in 0.2s;
+  z-index: -9999;
+}
+.done{
+  opacity: 1;
+  filter: blur(0px);
+  transition: ease-in 0.2s;
+}
+/* preloader----- */
+.loader{
+  position: absolute;
+  transform: translate(-50%,-50%);
+  left: 50%;top: 50%;
+    display: block;
+    z-index: 89989898;
+}
+.ring{
+    height:5rem;
+    width:5rem;
+    border:0.5rem solid#861f41;
+    border-radius:50%;
+    border-left-color: transparent; 
+    border-right-color: transparent;
+    border-bottom-color:transparent;
+    animation:loading 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+      
+      border-width:0.4rem;
+    
+    
+    
+    
+    
+    }
+    @keyframes loading{
+      0% {
+        transform: rotate(0deg);
+        
+      }
+    
+      100% {
+        transform: rotate(360deg);
+    
+      }
+    }
+    .main2{
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      height:100vh;
+    }
+.alert {
+    border: 2px solid rgb(130, 247, 169);
+    border-radius: 5px;
+    position: absolute;
+    top: 110%;
+    width: 11% !important;
+    height: 70px;
+    left: 43%;
+    color: #861f41;
+    background-color: white;
+    text-align: center;
+    /* box-shadow: -5px 7px 22px 0px rgba(0, 0, 0, 0.35); */
+
+}
+.alert2{
+    border: 1px solid rgb(247, 142, 130);
+    position: absolute;
+    top: 110%;
+    width: 25% !important;
+    height: 100px;
+    left: 43%;
+    font-size: 28px !important;
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(224, 100, 84);
+    text-align: center;
+    /* box-shadow: -5px 7px 22px 0px rgba(0, 0, 0, 0.35); */
+
+}
